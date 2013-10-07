@@ -18,5 +18,5 @@ Uso:
 Referencias
 -----------
 
-* [https://github.com/regebro/hovercraft]
-* [https://hovercraft.readthedocs.org/en/1.0/]
+* (https://github.com/regebro/hovercraft)
+* (https://hovercraft.readthedocs.org/en/1.0/)
