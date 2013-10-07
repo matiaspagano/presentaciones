@@ -41,53 +41,32 @@ If you do you get an error::
 
 ----
 
-Other formatting
+Obteniendo un repositorio git
+=============================
+    
+- Inicializar un repositorio en un directorio existente
+
+.. code:: bash
+
+	$ git init
+
+- Clonando un repositorio existente
+
+.. code:: bash
+
+	$ git clone gitlab@git.proyecto2013.linti.unlp.edu.ar/grupo.git
+	
+----
+
+Más información:
 ================
 
-All the normal reStructuredText functions are supported in Hovercraft!
-
-- Such as bulletlists, which start with a dash (-) or an asterisk (*).
-  You can have many lines of text in one bullet if you indent the
-  following lines.
-
-   - And you can have many levels of bullets.
-   
-       - Like this.
-    
-- There is *Emphasis* and **strong emphasis**, rendered as <em> and <strong>.
+.. Git: http://git-scm.com/
+.. Libro: Pro Git: http://git-scm.com/book
+.. Git Cheatsheet: http://byte.kde.org/~zrusin/git/git-cheat-sheet-medium.png
+.. Git Cheatsheet Interactivo: http://ndpsoftware.com/git-cheatsheet.html
 
 ----
 
-More formatting
-===============
-
-#. Numbered lists is of course also supported.
-
-#. They are automatically numbered.
-
-#. But only for single-level lists and single rows of text.
-
-#. ``inline literals``, rendered as <tt> and usually shown with a monospace font, which is good for source code.
-
-#. Hyperlinks, like Python_
-
-.. _Python: http://www.python.org
-
-
-----
-
-.. code:: python
-
-   >>> datetime(2013, 2, 19, 12)
-   datetime.datetime(2013, 2, 19, 12, 0)
-
-.. _Manuel: http://pygments.org/
-
-----
-
-That's all folks!
-=================
-
-That finishes the basic tutorial for Hovercraft! Next you probably want to
-take a look at the positioning tutorial, so you can use the pan, rotate and
-zoom functionality.
+Dudas?
+======
