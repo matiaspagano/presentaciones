@@ -1,0 +1,35 @@
+body {
+    width:1024px;
+    font-size: 30px;
+    font-family: 'Armata', sans-serif;
+    background-color: #B8CC84;
+    color: #eee;
+    text-shadow: 1px 1px 2px #000;
+}
+
+ul {
+    display: block;
+    list-style: none outside url("images/checkmark.png");
+    margin: 6px 0 10px;
+}
+
+
+h1 {
+    font-family: "BitterBold";
+    text-italic: none;
+    font-size: 2em;
+}
+
+h2 {
+    font-family: "Bitter";
+}
+
+blockquote {
+    font-family: "BitterItalic";
+}
+
+a, em {
+    color: #91C5CF;
+    text-decoration: none;
+    font-weight: bold;
+}
