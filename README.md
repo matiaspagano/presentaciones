@@ -6,9 +6,8 @@ Instalación Hovercraft
 
 Ubuntu/Debian:
 
-	$ sudo apt-get install python-pip python-configparser libxml2-dev libxslt1-dev 
-
-	$ pip install hovercraft
+	apt-get install python-pip python-configparser libxml2-dev libxslt1-dev 
+	pip install hovercraft
 
 Uso:
 ----
@@ -18,5 +17,5 @@ Uso:
 Referencias
 -----------
 
-* (https://github.com/regebro/hovercraft)
-* (https://hovercraft.readthedocs.org/en/1.0/)
+* https://github.com/regebro/hovercraft
+* https://hovercraft.readthedocs.org/en/1.0/
