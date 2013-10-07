@@ -1,14 +1,13 @@
 :title: Git
 :author: Matías Pagano
-:description: Tutorial Git.
+:description: Tutorial Git
 :keywords: Git
 :css: git.css
-:favicon: git.png
 
 ----
 
 .. image:: images/git.png
-=============================
+
 
 Restructured text takes any line that is underlines with punctuation and
 makes it into a heading. Each type of undeline will be made into a different
