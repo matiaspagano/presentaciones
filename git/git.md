@@ -55,6 +55,50 @@ Obteniendo un repositorio git
 	
 ----
 
+Ciclo de vida de un archivo
+===========================
+
+.. image:: images/git-file-lifecycle.png
+    :height: 600px
+    :width: 800px
+
+----
+
+Repositorios Remotos
+====================
+
+* Son repositorios externos (ejemplo: de coworkers).
+* Puede haber n remotos
+
+----
+
+El workflow completo
+====================
+
+.. image:: images/git-workflow.png
+    :height: 600px
+    :width: 800px
+
+----
+Instalación de GIT
+==================
+
+* Linux 
+	* Debian/Lihuen/Ubuntu :
+		$ apt-get install git-core
+	* Fedora:
+		$ yum install git-core
+* Mac:
+	* http://code.google.com/p/git-osx-installer
+
+* Windows:
+	* http://msysgit.github.com/
+
+* Integrado con Eclipse (EGIT):
+	* http://www.eclipse.org/egit/
+	
+----
+
 Más información:
 ================
 
