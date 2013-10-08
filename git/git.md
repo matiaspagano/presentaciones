@@ -8,24 +8,21 @@
 
 .. image:: images/git.png
 
+---
 
-Restructured text takes any line that is underlines with punctuation and
-makes it into a heading. Each type of undeline will be made into a different
-level of heading, but it is not the type that is important, but rather the
-order of which each type will be enountered.
+Que es Git?
+===========
 
-So in this presentation, lines underlined with equal (=) characters will be
-made into a first-level (H1) heading.
+
 
 ----
 
-First header
-============
+Características
+=============== 
 
-You can choose other punctuation characters as your level 1 heading if you like,
-but this is the most common. Any if these character works::
-
-    = - ` : ' " ~ ^ _ * + # < > .
+* Snapshots, no diferencias
+* Casi todas las operaciones son locales
+* Tiene integridad
 
 Second header
 -------------
@@ -61,10 +58,10 @@ Obteniendo un repositorio git
 Más información:
 ================
 
-.. Git: http://git-scm.com/
-.. Libro: Pro Git: http://git-scm.com/book
-.. Git Cheatsheet: http://byte.kde.org/~zrusin/git/git-cheat-sheet-medium.png
-.. Git Cheatsheet Interactivo: http://ndpsoftware.com/git-cheatsheet.html
+* Git: http://git-scm.com/
+* Libro: Pro Git: http://git-scm.com/book
+* Git Cheatsheet: http://byte.kde.org/~zrusin/git/git-cheat-sheet-medium.png
+* Git Cheatsheet Interactivo: http://ndpsoftware.com/git-cheatsheet.html
 
 ----
 
