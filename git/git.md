@@ -55,8 +55,8 @@ Ciclo de vida de un archivo
 Repositorios Remotos
 ====================
 
-* Son repositorios externos (ejemplo: de coworkers).
-* Puede haber n remotos
+- Son repositorios externos (ejemplo: de coworkers).
+- Puede haber n remotos
 
 ----
 
@@ -69,8 +69,29 @@ El workflow completo
 
 ----
 
+¿Qué es un branch?
+------------------
+
+- Es un puntero a un commit
+
+----
+
+¿Y cómo sabe git en que branch estamos actualmente?
+---------------------------------------------------
+
+- Otro puntero: HEAD 
+
+----
+
 Branches
 ========
+
+Cambiando de branch
+-------------------
+
+.. code:: bash
+
+	$ git checkout testing
 
 ----
 
@@ -80,26 +101,29 @@ Trabajando con Branches
 .. image:: images/git-branching-model.png
     :height: 550px
     
-http://nvie.com/posts/a-successful-git-branching-model/
+- http://nvie.com/posts/a-successful-git-branching-model/
 
 ----
 
 Instalación de GIT
 ==================
 
-* Linux 
-	* Debian/Lihuen/Ubuntu :
-		$ apt-get install git-core
-	* Fedora:
-		$ yum install git-core
-* Mac:
-	* http://code.google.com/p/git-osx-installer
+* Linux Debian/Lihuen/Ubuntu :
 
-* Windows:
-	* http://msysgit.github.com/
+.. code:: bash
+		
+	$ apt-get install git-core
 
-* Integrado con Eclipse (EGIT):
-	* http://www.eclipse.org/egit/
+
+* Linux Fedora :
+	
+.. code:: bash
+		
+	$ yum install git-core
+
+* Mac: http://code.google.com/p/git-osx-installer
+* Windows: http://msysgit.github.com/
+* Integrado con Eclipse (EGIT): http://www.eclipse.org/egit/
 	
 ----
 
