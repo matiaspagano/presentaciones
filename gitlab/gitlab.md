@@ -1,4 +1,4 @@
-:title: Git
+:title: GitLab
 :author: Matías Pagano
 :description: GitLab, administrador web de repositorios Git
 :keywords: Gitlab
@@ -6,14 +6,15 @@
 
 ----
 
-.. image:: images/gitlab_logo.jpg
+.. image:: images/gitlab_logo.png
 
----
+----
 
-Que es Gilab?
+Que es GitLab?
 =============
 
 GitLab es una aplicación opensource que nos permite administrar repositorios en git mediante una interfaz web.
+Es un clon de <a href="http://github.com">GitHub</a> y es una herramienta muy potente para el desarrollo.
 
 ----
 

@@ -8,7 +8,7 @@
 
 .. image:: images/git.png
 
----
+----
 
 Que es Git?
 ===========
@@ -23,18 +23,6 @@ Características
 * Snapshots, no diferencias
 * Casi todas las operaciones son locales
 * Tiene integridad
-
-Second header
--------------
-
-Third header
-............
-
-The drawback with reStructuredText is that you can't skip levels. You can't
-go directly from level 1 to level 3 without having a level 2 in between.
-If you do you get an error::
-
-    Title level inconsistent
 
 ----
 
@@ -80,6 +68,22 @@ El workflow completo
     :width: 800px
 
 ----
+
+Branches
+========
+
+----
+
+Trabajando con Branches
+=======================
+
+.. image:: images/git-branching-model.png
+    :height: 550px
+    
+http://nvie.com/posts/a-successful-git-branching-model/
+
+----
+
 Instalación de GIT
 ==================
 
@@ -99,8 +103,8 @@ Instalación de GIT
 	
 ----
 
-Más información:
-================
+Links:
+======
 
 * Git: http://git-scm.com/
 * Libro: Pro Git: http://git-scm.com/book
@@ -111,3 +115,18 @@ Más información:
 
 Dudas?
 ======
+
+----
+
+
+Fin
+===
+
+----
+
+y recuerden...
+==============
+
+----
+
+.. image:: images/git-windows-meme.jpg
