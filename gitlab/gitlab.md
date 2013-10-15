@@ -6,8 +6,8 @@
 
 ----
 
-.. image:: images/gitlab_logo.png
-	:alt: GitLab
+GitLab
+======
 	
 ----
 
