@@ -50,6 +50,11 @@ Tiene integridad
 
 * Todo en Git es verificado mediante una suma de comprobación antes de ser almacenado, y es identificado a partir de ese momento mediante dicho checksum.
 * Esto significa que es imposible cambiar los contenidos de cualquier archivo o directorio sin que Git lo sepa.
+* Ejemplo:
+
+.. code:: bash
+
+	ea36b870f9a0e1e6439758b6e681bd329a04db3d
 
 ----
 
