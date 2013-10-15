@@ -6,6 +6,9 @@
 
 ----
 
+GitLab
+======
+
 .. image:: images/gitlab_logo.png
 
 ----
