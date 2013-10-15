@@ -9,7 +9,7 @@
 GitLab
 ======
 
-.. image:: images/gitlab_logo.png
+.. image:: images/gitlab_logo.jpg
 
 ----
 
@@ -87,6 +87,21 @@ Es la opción más común.
 	git push -u origin master
 
 ----
+
+Utilizando GitLab
+=================
+
+Teniendo nuestro respositorio git creado, podemos empezar a utilizarlo y en GitLab tener:
+
+- El último estado de nuestros archivos. 
+- Seguimiento de los *commits* realizados y las diferencias aplicadas.
+- Una red con el crecimiento de las versiones y bifurcaciones que va tomando nuestro repositorio.
+- Gráficos con estadísticas de uso.
+- Creación y seguimiento de tareas (o issues) relativas al proyecto. 
+- Una wiki con información propia de cada proyecto.
+
+----
+
 
 Dudas?
 ======
