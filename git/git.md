@@ -13,7 +13,10 @@
 Que es Git?
 ===========
 
+Git es un sistemas de control de versiones distribuido libre dieñado para manejar proyectos con velocidad y eficiencia.
 
+.. image:: images/git-distributed.png
+	:align: center
 
 ----
 
@@ -23,6 +26,30 @@ Características
 * Snapshots, no diferencias
 * Casi todas las operaciones son locales
 * Tiene integridad
+
+----
+
+Snapshots, no diferencias
+=========================
+
+* La mayoría de los demás sistemas almacenan la información como una lista de cambios en los archivos.
+* Git modela sus datos más como un conjunto de instantáneas (snapshots) de un mini sistema de archivos.
+
+----
+
+Casi todas las operaciones son locales
+======================================
+
+* La mayoría de las operaciones en Git sólo necesitan archivos y recursos locales para operar.
+* Para navegar por la historia del proyecto, Git no necesita buscarla en el servidor.
+
+----
+
+Tiene integridad
+================
+
+* Todo en Git es verificado mediante una suma de comprobación antes de ser almacenado, y es identificado a partir de ese momento mediante dicho checksum.
+* Esto significa que es imposible cambiar los contenidos de cualquier archivo o directorio sin que Git lo sepa.
 
 ----
 
@@ -73,7 +100,6 @@ Este directorio contiene la historia completa del repositorio. El archivo *.git/
 
 ----
 
-
 Configuración del usuario
 =========================
 
@@ -89,14 +115,32 @@ Configurá tu usuario e email para Git mediante los siguientes comandos:
 
 ----
 
+Operaciones Locales
+===================
+
+Git tiene tres estados principales en los que se pueden encontrar tus archivos: confirmado (committed), modificado (modified), y preparado (staged). 
+ 
+.. image:: images/git-local-operations.png
+
+----
+
+Comprobando el estado
+=====================
+
+.. code:: bash
+
+	$ git status
+	# On branch master
+	nothing to commit (working directory clean)
+
+----
+
 Creando contenido
 =================
 
 .. code:: bash
 
 	# Creamos contenido
-	$ touch index.php
-	$ mkdir css
 	# Agregamos todo (archivos y directorios) al repositorio
 	$ git add .
 	# Hacemos un commit al repositorio
@@ -147,169 +191,50 @@ El workflow completo
 
 ----
 
-¿Qué es un branch?
-------------------
+Conflictos
+==========
 
-- Es un puntero a un commit
-
-----
-
-¿Y cómo sabe git en que branch estamos actualmente?
----------------------------------------------------
-
-- Otro puntero: HEAD 
+Si al actualizar el repositorio local con el remoto (*git fetch* + *git merge* = *git pull*) no se puede realizar el merge por estar las misma líneas modificada se produce un CONFLICTO. 
 
 ----
 
-Branches
-========
+Conflictos
+==========
 
-Cambiando de branch
--------------------
+Git nos avisa que debemos resolver nosotros el conflicto a mano:
 
 .. code:: bash
 
-	$ git checkout testing
+	From git.proyecto2013.linti.unlp.edu.ar:ayudantes/grupo_777
+	   2b33f0d..ea36b87  master     -> origin/master
+	Auto-merging index.php
+	CONFLICT (content): Merge conflict in index.php
+	Automatic merge failed; fix conflicts and then commit the result.
 
 ----
 
-Trabajando con Branches
-=======================
+Conflictos
+==========
 
-.. image:: images/git-branching-model.png
-    :height: 550px
-    
-- http://nvie.com/posts/a-successful-git-branching-model/
-
-----
-
-Cambiando de branch
-===================
+Debemos editar el archivo en conflicto que va a tener marcadas las lineas con problemas:
 
 .. code:: bash
 
-	$ git checkout testing
+	<h1>
+	<?php
 
-![checkout](18333fig0306-tn.png)
+	<<<<<<< HEAD
+	print "hello Proyecto!!!"
 
-* Lo único que hace es cambiar HEAD!
+	?>
+	</h1>
+	=======
+	print "hello World!!!!!!!!!!"
 
-----
+	?>
+	>>>>>>> ea36b870f9a0e1e6439758b6e681bd329a04db3d
 
-# Haciendo cambios en un branch
-
-.. code:: bash
-
-	$ vi index.php
-	$ git commit -am 'made a change'
-
-
-![changing-branches](18333fig0307-tn.png)
-
-----
-
-# Volviendo a master
-
-.. code:: bash
-
-	$ git checkout master
-
-![master](18333fig0308-tn.png)
-
-----
-
-# Haciendo cambios en master
-
-.. code:: bash
-
-	$ vi index.php
-	$ git commit -am 'made other changes'
-
-
-![more-changes](18333fig0309-tn.png)
-
-----
-
-# Branching y merging
-
-![first](18333fig0310-tn.png)
-
-----
-
-# Branching y merging
-
-![second](18333fig0311-tn.png)
-
-----
-
-# Branching y merging
-
-![third](18333fig0312-tn.png)
-
-----
-
-# Branching y merging
-
-![fourth](18333fig0313-tn.png)
-
-----
-
-# Branching y merging: fast-forward
-
-.. code:: bash
-
-	$ git checkout master
-	$ git merge hotfix
-
-![fifth](18333fig0314-tn.png)
-
-----
-
-# Branching y merging
-
-![sixth](18333fig0315-tn.png)
-
-----
-
-# Branching y merging: merge made by recursive
-
-.. code:: bash
-
-	$ git checkout master
-	$ git merge iss53
-
-![seventh](18333fig0316-tn.png)
-
-----
-
-# Branching y merging
-
-![eighth](18333fig0317-tn.png)
-
-----
-
-# Merge: Conflictos
-
-* Remotos
-
-![remote](18333fig0322-tn.png)
-
-----
-
-# Merge: Conflictos
-
-![remote-2](18333fig0323-tn.png)
-
-----
-
-# Merge: Conflictos
-
-![remote-3](18333fig0324-tn.png)
-
-----
-
-Repositorios Remotos
-====================
+y luego volverlo a agregar con *git add*.
 
 ----
 
