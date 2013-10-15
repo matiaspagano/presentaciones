@@ -194,7 +194,7 @@ El workflow completo
 Conflictos
 ==========
 
-Si al actualizar el repositorio local con el remoto (*git fetch* + *git merge* = *git pull*) no se puede realizar el merge por estar las misma líneas modificada se produce un CONFLICTO. 
+Si al actualizar el repositorio local con el remoto (*git fetch* + *git merge* = *git pull*) no se puede realizar el merge por estar las mismas líneas modificada se produce un CONFLICTO. 
 
 ----
 
@@ -222,19 +222,16 @@ Debemos editar el archivo en conflicto que va a tener marcadas las lineas con pr
 
 	<h1>
 	<?php
-
 	<<<<<<< HEAD
 	print "hello Proyecto!!!"
-
 	?>
 	</h1>
 	=======
 	print "hello World!!!!!!!!!!"
-
 	?>
 	>>>>>>> ea36b870f9a0e1e6439758b6e681bd329a04db3d
 
-y luego volverlo a agregar con *git add*.
+y luego volverlo a agregar con *git add* y commiterarlo *git commit*.
 
 ----
 
